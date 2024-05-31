@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-white);
+}
+
+html {
+    font-size: 16px;
+}
+
+body, input, button, a {
+    font-family: "K2D", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root{
+    --color-white: #ffffff;
+    --color-black: #0c0c0c;
+    --color-gray: #1B1B1E;
+
+}
+
