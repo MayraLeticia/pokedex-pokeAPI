@@ -12,7 +12,7 @@ const SearchBar = () => {
             setPokemon(response.data);
             setError('');
         } catch (err) {
-            setError('Pokemon not found. Please try again.');
+            setError('Pokemon não encontrado. Por favor, tente novamente.');
             setPokemon(null);
         }
     };
@@ -23,16 +23,15 @@ const SearchBar = () => {
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Enter Pokemon name or number"
+                placeholder="Procure pelo nome ou numero"
             />
             <button onClick={handleSearch}>Search</button>
             {error && <p>{error}</p>}
             {pokemon && (
                 <div>
+                    <p>{pokemon.game_indices}</p>
                     <h1>{pokemon.name}</h1>
                     <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-                    <p>Height: {pokemon.height}</p>
-                    <p>Weight: {pokemon.weight}</p>
                     <p>Type: {pokemon.types.map(typeInfo => typeInfo.type.name).join(', ')}</p>
                 </div>
             )}
