@@ -1,17 +1,21 @@
-import React from "react";
 import "./style.scss";
 import { Layout } from "../../components";
-import { useNavigate } from "react-router-dom";
-
+import React, { useContext } from 'react';
+import { PokemonContext } from "../../services/PokemonContext";
+import { PokemonList } from "../../components";
 
 const Home = () => {
+
+    const context = useContext(PokemonContext)
+    console.log(context);
 
     return (
         <Layout>
             <div className='home-container'>
-                home
+            <PokemonList/>
             </div>
         </Layout>
+
     );
 };
 
