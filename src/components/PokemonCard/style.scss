@@ -1,0 +1,161 @@
+.pokemon-card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 6vw;
+
+	width: 23vw;
+	height: 26vh;
+
+	background-color: var(--color-card);
+	border-radius: 10px;
+	box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.25);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid var(--color-card);
+
+	.card-img {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+
+		img {
+			width: auto;
+			height: 102px;
+		}
+	}
+
+	.card-info {
+
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+
+		.pokemon-info {
+			margin-bottom: 1.5vh;
+
+			.pokemon-id {
+				display: block;
+				color: #888;
+			}
+
+			label {
+				font-size: 20px;
+				font-weight: 700;
+				color: #333;
+			}
+		}
+
+		.pokemon-types {
+			width: 11.5vw;
+
+
+			span {
+				width: 5vw;
+
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				padding: 5px 10px;
+
+
+				border-radius: 5px;
+
+				font-size: 16px;
+				font-weight: 600;
+
+				background-color: var(--color-grass);
+				color: var(--color-white);
+
+				&.fire {
+					background-color: #ff7402;
+				}
+
+				&.grass {
+					background-color: #9bcc50;
+				}
+
+				&.steel {
+					background-color: #9eb7b8;
+				}
+
+				&.water {
+					background-color: #4592c4;
+				}
+
+				&.psychic {
+					background-color: #f366b9;
+				}
+
+				&.ground {
+					background-color: #ab9842;
+				}
+
+				&.ice {
+					background-color: #51c4e7;
+				}
+
+				&.flying {
+					background-color: #3dc7ef;
+				}
+
+				&.ghost {
+					background-color: #4d5b64;
+				}
+
+				&.normal {
+					background-color: #a4acaf;
+				}
+
+				&.poison {
+					background-color: #7e0058;
+				}
+
+				&.rock {
+					background-color: #a38c21;
+				}
+
+				&.fighting {
+					background-color: #d56723;
+				}
+
+				&.dark {
+					background-color: #707070;
+				}
+
+				&.bug {
+					background-color: #729f3f;
+				}
+
+				&.dragon {
+					background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+				}
+
+				&.electric {
+					background-color: #bba909;
+				}
+
+				&.fairy {
+					background-color: #fdb9e9;
+				}
+
+				&.shadow {
+					background-color: #7b62a3;
+				}
+
+				&.unknown {
+					background-color: #757575;
+				}
+			}
+		}
+
+
+	}
+
+
+}
