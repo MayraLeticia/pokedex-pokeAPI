@@ -13,7 +13,7 @@ export const PokemonProvider = ({ children }) => {
     const [loading, setLoading] = useState(true)
     const [active, setActive] = useState(false)
     
-    const getListOfPokemons = async (limit = 50) => {
+    const getListOfPokemons = async (limit = 151) => {
         const baseURL = 'https://pokeapi.co/api/v2/';
         
         try {
@@ -44,7 +44,15 @@ export const PokemonProvider = ({ children }) => {
 
         const response = await fetch(`${baseURL}pokemon/${id}`)
         const data = await response.json()
-        return data
+
+        const speciesResponse = await fetch(data.species.url);
+        const speciesData = await speciesResponse.json();
+
+        const englishFlavorText = speciesData.flavor_text_entries.find(
+            entry => entry.language.name === 'en'
+        ).flavor_text.replace(/\f/g, ' ');
+
+        return { ...data, description: englishFlavorText };
     }
 
     useEffect(() => {
