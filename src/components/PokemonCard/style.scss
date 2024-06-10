@@ -54,104 +54,104 @@
 			width: 11.5vw;
 
 
-			span {
-				width: 5vw;
+			// span {
+			// 	width: 5vw;
 
-				display: flex;
-				align-items: center;
-				justify-content: center;
+			// 	display: flex;
+			// 	align-items: center;
+			// 	justify-content: center;
 
-				padding: 5px 10px;
+			// 	padding: 5px 10px;
 
 
-				border-radius: 5px;
+			// 	border-radius: 5px;
 
-				font-size: 16px;
-				font-weight: 600;
+			// 	font-size: 16px;
+			// 	font-weight: 600;
 
-				background-color: var(--color-grass);
-				color: var(--color-white);
+			// 	background-color: var(--color-grass);
+			// 	color: var(--color-white);
 
-				&.fire {
-					background-color: #ff7402;
-				}
+			// 	&.fire {
+			// 		background-color: #ff7402;
+			// 	}
 
-				&.grass {
-					background-color: #9bcc50;
-				}
+			// 	&.grass {
+			// 		background-color: #9bcc50;
+			// 	}
 
-				&.steel {
-					background-color: #9eb7b8;
-				}
+			// 	&.steel {
+			// 		background-color: #9eb7b8;
+			// 	}
 
-				&.water {
-					background-color: #4592c4;
-				}
+			// 	&.water {
+			// 		background-color: #4592c4;
+			// 	}
 
-				&.psychic {
-					background-color: #f366b9;
-				}
+			// 	&.psychic {
+			// 		background-color: #f366b9;
+			// 	}
 
-				&.ground {
-					background-color: #ab9842;
-				}
+			// 	&.ground {
+			// 		background-color: #ab9842;
+			// 	}
 
-				&.ice {
-					background-color: #51c4e7;
-				}
+			// 	&.ice {
+			// 		background-color: #51c4e7;
+			// 	}
 
-				&.flying {
-					background-color: #3dc7ef;
-				}
+			// 	&.flying {
+			// 		background-color: #3dc7ef;
+			// 	}
 
-				&.ghost {
-					background-color: #4d5b64;
-				}
+			// 	&.ghost {
+			// 		background-color: #4d5b64;
+			// 	}
 
-				&.normal {
-					background-color: #a4acaf;
-				}
+			// 	&.normal {
+			// 		background-color: #a4acaf;
+			// 	}
 
-				&.poison {
-					background-color: #7e0058;
-				}
+			// 	&.poison {
+			// 		background-color: #7e0058;
+			// 	}
 
-				&.rock {
-					background-color: #a38c21;
-				}
+			// 	&.rock {
+			// 		background-color: #a38c21;
+			// 	}
 
-				&.fighting {
-					background-color: #d56723;
-				}
+			// 	&.fighting {
+			// 		background-color: #d56723;
+			// 	}
 
-				&.dark {
-					background-color: #707070;
-				}
+			// 	&.dark {
+			// 		background-color: #707070;
+			// 	}
 
-				&.bug {
-					background-color: #729f3f;
-				}
+			// 	&.bug {
+			// 		background-color: #729f3f;
+			// 	}
 
-				&.dragon {
-					background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
-				}
+			// 	&.dragon {
+			// 		background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+			// 	}
 
-				&.electric {
-					background-color: #bba909;
-				}
+			// 	&.electric {
+			// 		background-color: #bba909;
+			// 	}
 
-				&.fairy {
-					background-color: #fdb9e9;
-				}
+			// 	&.fairy {
+			// 		background-color: #fdb9e9;
+			// 	}
 
-				&.shadow {
-					background-color: #7b62a3;
-				}
+			// 	&.shadow {
+			// 		background-color: #7b62a3;
+			// 	}
 
-				&.unknown {
-					background-color: #757575;
-				}
-			}
+			// 	&.unknown {
+			// 		background-color: #757575;
+			// 	}
+			// }
 		}
 
 
